@@ -24,6 +24,7 @@
     <Content Include="plugin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\_ViewImports.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
