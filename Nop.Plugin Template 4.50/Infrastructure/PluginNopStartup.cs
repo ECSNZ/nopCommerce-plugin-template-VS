@@ -6,7 +6,7 @@ using Nop.Core.Infrastructure;
 
 namespace $safeprojectname$.Infrastructure
 {
-    public class PluginNopStartup : INopStartup
+    public class NopStartup : INopStartup
     {
         public void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
