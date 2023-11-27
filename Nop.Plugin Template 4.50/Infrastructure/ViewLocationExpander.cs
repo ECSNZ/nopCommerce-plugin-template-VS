@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Razor;
+using $safeprojectname$;
+
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,11 +16,20 @@ namespace $safeprojectname$.Infrastructure
         {
             if (context.AreaName == "Admin")
             {
-                viewLocations = new[] { $"/Plugins/$safeprojectname$/Areas/Admin/Views/{context.ControllerName}/{context.ViewName}.cshtml" }.Concat(viewLocations);
+                viewLocations = new[] {
+                    $"~/Plugins/{Defaults.SYSTEM_NAME}/Areas/Admin/Views/{{1}}/{{0}}.cshtml"
+                }
+                .Concat(viewLocations);
             }
             else
             {
-                viewLocations = new[] { $"/Plugins/$safeprojectname$/Views/{context.ControllerName}/{context.ViewName}.cshtml" }.Concat(viewLocations);
+                viewLocations = new[] {
+                    $"~/Plugins/{Defaults.SYSTEM_NAME}/Views/{{1}}/{{0}}.cshtml",
+                    $"~/Plugins/{Defaults.SYSTEM_NAME}/Views/{{0}}.cshtml",
+                    $"~/Plugins/{Defaults.SYSTEM_NAME}/Views/Shared/{{1}}/{{0}}.cshtml",
+                    $"~/Plugins/{Defaults.SYSTEM_NAME}/Views/Shared/{{0}}.cshtml",
+                }
+                .Concat(viewLocations);
             }
 
             return viewLocations;
