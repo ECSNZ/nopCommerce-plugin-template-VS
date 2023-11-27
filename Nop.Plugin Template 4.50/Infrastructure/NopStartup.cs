@@ -23,6 +23,6 @@ namespace $safeprojectname$.Infrastructure
         {
         }
 
-        public int Order => 11;
+        public int Order => 3000;
     }
 }
