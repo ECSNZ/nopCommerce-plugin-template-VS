@@ -39,7 +39,6 @@
       <Folder Name="Extensions" TargetFolderName="Extensions" />
       <Folder Name="Factories" TargetFolderName="Factories" />
       <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
-        <ProjectItem ReplaceParameters="true" TargetFileName="PluginNopStartup.cs">PluginNopStartup.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="ViewLocationExpander.cs">ViewLocationExpander.cs</ProjectItem>
       </Folder>
 	  <Folder Name="Mapping" TargetFolderName="Mapping">
@@ -58,7 +57,6 @@
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="logo.jpg">logo.jpg</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="plugin.json">plugin.json</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Plugin.cs">CustomPlugin.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
