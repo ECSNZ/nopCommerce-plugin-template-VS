@@ -58,7 +58,8 @@
       </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="logo.jpg">logo.jpg</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="plugin.json">plugin.json</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Plugin.cs">CustomPlugin.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Plugin.cs">Plugin.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Defaults.cs">Defaults.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
